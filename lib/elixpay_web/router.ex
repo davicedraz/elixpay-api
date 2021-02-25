@@ -8,6 +8,9 @@ defmodule ElixpayWeb.Router do
   scope "/api", ElixpayWeb do
     pipe_through :api
     post "/users", UsersController, :create
+
+    post "/accounts/:id/deposit", AccountsController, :deposit
+    post "/accounts/:id/withdraw", AccountsController, :withdraw
   end
 
   if Mix.env() in [:dev, :test] do
