@@ -17,7 +17,7 @@ defmodule ElixpayWeb.UsersController do
     defp handle_insert_and_send_response({:error, result}, conn) do
     conn
     |> put_status(:bad_request)
-    |> put_view(ElixpayView.ErrorView)
+    |> put_view(ElixpayWeb.ErrorView)
     |> render("400.json", result: result)
   end
 end
