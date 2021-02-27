@@ -11,6 +11,7 @@ defmodule ElixpayWeb.Router do
 
     post "/accounts/:id/deposit", AccountsController, :deposit
     post "/accounts/:id/withdraw", AccountsController, :withdraw
+    post "/accounts/transaction", AccountsController, :transaction
   end
 
   if Mix.env() in [:dev, :test] do

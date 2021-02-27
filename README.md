@@ -1,5 +1,7 @@
 # Elixpay
 
+Playing around with Elixir. Based on [Rafael Camarda](https://github.com/RafaelCamarda) training. 
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
