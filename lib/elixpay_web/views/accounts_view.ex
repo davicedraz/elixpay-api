@@ -2,7 +2,7 @@ defmodule ElixpayWeb.AccountsView do
   alias Elixpay.Account
   alias Elixpay.Accounts.Transactions.Response, as: TransactionResponse
 
-  def render("update_account.json", %{accounts: %Account{id: account_id, balance: balance}}) do
+  def render("update.json", %{accounts: %Account{id: account_id, balance: balance}}) do
     %{
       message: "Balance succesfully updated",
       user: %{

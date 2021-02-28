@@ -9,7 +9,7 @@ defmodule ElixpayWeb.AccountsController do
     with {:ok, %Account{} = account} <- Elixpay.deposit(params) do
       conn
       |> put_status(:ok)
-      |> render("update_account.json", account: account)
+      |> render("update.json", account: account)
     end
   end
 
@@ -17,7 +17,7 @@ defmodule ElixpayWeb.AccountsController do
     with {:ok, %Account{} = account} <- Elixpay.withdraw(params) do
       conn
       |> put_status(:ok)
-      |> render("update_account.json", account: account)
+      |> render("update.json", account: account)
     end
   end
 
