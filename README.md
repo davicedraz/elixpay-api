@@ -1,3 +1,5 @@
+![Coverage](https://img.shields.io/badge/Test%20Coverage-52%25-yellowgreen)
+
 # Elixpay
 
 Playing around with Elixir. Based on [Rafael Camarda](https://github.com/RafaelCamarda) training. 
