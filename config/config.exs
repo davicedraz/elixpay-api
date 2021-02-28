@@ -10,6 +10,11 @@ use Mix.Config
 config :elixpay,
   ecto_repos: [Elixpay.Repo]
 
+# Change this default credentials or move them to .env
+config :elixpay, :basic_auth,
+  username: "admin",
+  password: "passwd"
+
 # Configures the endpoint
 config :elixpay, ElixpayWeb.Endpoint,
   url: [host: "localhost"],
